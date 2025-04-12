@@ -56,13 +56,13 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
               <DropdownMenuItem>
                 <div className="flex flex-col">
                   <span className="font-medium">New course enrollment</span>
-                  <span className="text-xs text-gray-500">John Doe enrolled in "Leadership 101"</span>
+                  <span className="text-xs text-gray-500">Njeri Wainaina enrolled in "Leadership 101"</span>
                 </div>
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <div className="flex flex-col">
                   <span className="font-medium">Assignment submission</span>
-                  <span className="text-xs text-gray-500">Sarah Smith submitted "Final Project"</span>
+                  <span className="text-xs text-gray-500">Kipchoge Keino submitted "Final Project"</span>
                 </div>
               </DropdownMenuItem>
               <DropdownMenuItem>
@@ -73,8 +73,8 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
               </DropdownMenuItem>
             </div>
             <DropdownMenuSeparator />
-            <DropdownMenuItem className="justify-center text-sm text-blue-600 cursor-pointer">
-              View all notifications
+            <DropdownMenuItem className="justify-center text-sm text-blue-600 cursor-pointer" asChild>
+              <Link to="/notifications">View all notifications</Link>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
@@ -84,11 +84,11 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
             <Button variant="ghost" className="relative pl-2 pr-0">
               <div className="flex items-center">
                 <Avatar className="h-8 w-8 mr-2">
-                  <AvatarImage src="https://github.com/shadcn.png" alt="User" />
-                  <AvatarFallback>AD</AvatarFallback>
+                  <AvatarImage src="https://github.com/shadcn.png" alt="Wangari Maathai" />
+                  <AvatarFallback>WM</AvatarFallback>
                 </Avatar>
                 <div className="flex flex-col items-start mr-2">
-                  <span className="text-sm font-medium">Admin User</span>
+                  <span className="text-sm font-medium">Wangari Maathai</span>
                   <span className="text-xs text-gray-500">Administrator</span>
                 </div>
               </div>
@@ -97,11 +97,11 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
           <DropdownMenuContent align="end" className="w-56">
             <DropdownMenuLabel>My Account</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              Profile
+            <DropdownMenuItem asChild>
+              <Link to="/profile">Profile</Link>
             </DropdownMenuItem>
-            <DropdownMenuItem>
-              Account settings
+            <DropdownMenuItem asChild>
+              <Link to="/settings">Account settings</Link>
             </DropdownMenuItem>
             <DropdownMenuSeparator />
             <DropdownMenuItem className="text-red-600">
