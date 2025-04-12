@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -25,7 +26,7 @@ const Settings = () => {
           <Tabs defaultValue="general">
             <div className="flex">
               <div className="w-1/4 pr-4 border-r border-gray-200">
-                <TabsList className="flex flex-col h-auto bg-transparent space-y-1" orientation="vertical">
+                <TabsList className="flex flex-col h-auto bg-transparent space-y-1">
                   <TabsTrigger value="general" className="justify-start w-full px-3">
                     <Globe className="h-4 w-4 mr-2" /> General
                   </TabsTrigger>
