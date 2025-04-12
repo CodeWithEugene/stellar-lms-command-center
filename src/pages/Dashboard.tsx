@@ -48,7 +48,7 @@ const enrollmentData = [
   { month: 'Jun', enrollments: 75 },
 ];
 
-const Index = () => {
+const Dashboard = () => {
   return (
     <div className="space-y-6">
       <WelcomeBanner />
@@ -284,4 +284,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Dashboard;
