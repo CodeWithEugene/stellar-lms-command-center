@@ -1,3 +1,3 @@
 # Welcome to my admin DashBoard.
 
-[Live ProjectT](stellar-lms-command-center.vercel.app)
+[Live Project](stellar-lms-command-center.vercel.app)
