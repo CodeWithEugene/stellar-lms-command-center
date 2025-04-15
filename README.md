@@ -1,5 +1,3 @@
 # Welcome to my admin DashBoard.
 
-## Project info
-
-**URL**: stellar-lms-command-center.vercel.app
+[Live pROJECT](stellar-lms-command-center.vercel.app)
